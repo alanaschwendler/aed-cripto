@@ -1,3 +1,7 @@
+CHAVE2: dC0YtU39
+
+Resultados gerados a partir de cipher_pub com CHAVE2: 
+
 openssl enc -d -a -aes-192-ecb -in cipher_pub.enc -out cipher_out.enc -K 303030306443305974553339
 
 eb95 4149 6d31 6807 2e2e 6149 8d13 1415
@@ -21,3 +25,33 @@ d511 42bf 8716 56e6 b86d 14b5 6906 dcab
 8d07 370a c573 8536 921b 6102 b390 6f97
 0ef7 c36b ccdb 9ff4 0c83 4a40 3627 93ea
 d75e efdd 83bc e894 11b5 b736 d1b4 96d3
+
+
+openssl enc -in cipher_pub.enc -out out.txt -d -aes-256-cbc -K 30303030303030306443305974553339 -iv 626974636f696e 
+
+3717 8629 4f9a 600a 1670 729b a3e1 8448
+1615 5df6 deb9 0a4f 5d75 fcf9 a2e9 f55c
+9fd7 10dd b45b a900 c64a 24a9 5888 9c75
+155c b271 a585 852f c120 f459 ba1e 9350
+2446 c620 bf10 f786 2ade 5e0c b464 a24f
+e49b d876 6175 53fe d334 617c 106b ff9c
+200a 619f 8145 4977 ed11 131b f39a 9c0a
+f500 0cea be79 9b82 b995 604d 7091 aebd
+94f2 cb6c aa47 3079 16c8 6739 a4b7 489e
+2212 fe3d a49c 0bdb a617 9d0a d04b eedc
+bdf1 021e 60f7 0c01 4501 7837 7cd9 98dd
+0e14 3682 a545 ce36 9c87 bb8e 706a 44ea
+49b0 8beb 3d1b 83cf 3f41 c28f cab8 2ca8
+
+openssl aes-256-cbc -d -a -in cipher_pub.enc -out out.txt -K 30303030303030306443305974553339 -iv 0000000000000000
+
+b16f 2061 f6d1 f731 c55a bce9 b696 1efb
+0697 71bc 0d0e 9efb 202a d526 70b9 6e8a
+9830 8360 a33a d43f f568 6c92 577e 3d9e
+007a 4528 b16f b7d7 b33a f2ca f83b f719
+51f2 9ebf e6f6 35e1 1060 4be2 5cbc c6e9
+8b72 2529 7190 89aa 7c1e e2ec 4f3c a02e
+8e0a 94e4 5f99 5746 b177 2e1b 21ad 88b3
+c05b 61d7 1cac daa6 45d4 1b0e 6e6b e621
+f9b1 614c 178b 64e8 81db 8f75 6ba3 b000
+
